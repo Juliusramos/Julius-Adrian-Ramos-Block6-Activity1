@@ -1,9 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="750dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bghome"
     tools:context=".HomePage">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/whole">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Top Picks"
+            android:fontFamily="@font/aguafina_script"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginStart="20dp"
+            tools:ignore="MissingConstraints"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="50dp"
+                    app:cardCornerRadius="25dp">
+
+                    <ImageButton
+                        android:layout_width="150dp"
+                        android:layout_height="137dp"
+                        android:padding="-50dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/botwo">
+                    </ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/aguafina_script"
+                        android:gravity="center"
+                        android:text="Flower"
+                        android:textSize="22sp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="50dp"
+                    app:cardCornerRadius="25dp">
+
+                    <ImageButton
+                        android:layout_width="150dp"
+                        android:layout_height="137dp"
+                        android:padding="-50dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bothree">
+                    </ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:fontFamily="@font/aguafina_script"
+                        android:gravity="center"
+                        android:text="Sunflower"
+                        android:textSize="22sp"
+                        android:textStyle="bold">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="50dp"
+                    app:cardCornerRadius="25dp">
+
+                    <ImageButton
+                        android:id="@+id/tinola"
+                        android:layout_width="150dp"
+                        android:layout_height="137dp"
+                        android:padding="-50dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/botwo">
+                    </ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:fontFamily="@font/aguafina_script"
+                        android:gravity="center"
+                        android:text="Gumamela"
+                        android:textSize="22sp"
+                        android:textStyle="bold">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_cat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:fontFamily="@font/aguafina_script"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="20dp"
+        tools:ignore="MissingConstraints">
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="280dp"
+        android:id="@+id/wholeCat">
+
+        <ScrollView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardAdobo"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:cardCornerRadius="25dp">
+
+                    <ImageButton
+                        android:id="@+id/catadobo"
+                        android:layout_width="match_parent"
+                        android:layout_height="235dp"
+                        android:src="@drawable/rosebo"
+                        android:padding="-50dp"
+                        android:scaleType="centerCrop">
+                    </ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rose Bouquet"
+                        android:fontFamily="@font/aguafina_script"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_gravity="bottom">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardSingang"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    app:cardCornerRadius="25dp">
+
+                    <ImageButton
+                        android:id="@+id/catsinigang"
+                        android:layout_width="match_parent"
+                        android:layout_height="235dp"
+                        android:src="@drawable/tulipbo"
+                        android:padding="-50dp"
+                        android:scaleType="centerCrop">
+                    </ImageButton>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tulips Bouquet"
+                        android:fontFamily="@font/aguafina_script"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_gravity="bottom">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
